@@ -1,0 +1,47 @@
+@import "~normalize.css";
+@import "@css/fonts.css";
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("./../img/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-out;
+}
+
+.logo:hover {
+  transform: rotate(60deg);
+}
+.img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("./../img/test.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateX(0deg);
+  transition: all 2s ease-out;
+}
+
+.img:hover {
+  transform: rotateX(180deg);
+}
