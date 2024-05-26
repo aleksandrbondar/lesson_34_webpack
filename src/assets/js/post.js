@@ -1,9 +1,7 @@
 export default class Post {
-  constructor(title, logo, img) {
+  constructor(title) {
     this.title = title;
     this.date = new Date();
-    this.logo = logo;
-    this.img = img ?? "";
   }
 
   toString() {
@@ -11,8 +9,6 @@ export default class Post {
       {
         title: this.title,
         date: this.date.toJSON(),
-        logo: this.logo,
-        img: this.img,
       },
       null,
       2,
